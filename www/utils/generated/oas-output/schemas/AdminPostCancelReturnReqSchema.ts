@@ -1,0 +1,13 @@
+/**
+ * @schema AdminPostCancelReturnReqSchema
+ * type: object
+ * description: SUMMARY
+ * x-schemaName: AdminPostCancelReturnReqSchema
+ * properties:
+ *   no_notification:
+ *     type: boolean
+ *     title: no_notification
+ *     description: The return's no notification.
+ * 
+*/
+

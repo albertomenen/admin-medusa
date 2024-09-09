@@ -1,0 +1,311 @@
+/**
+ * @schema AdminUpdateProduct
+ * type: object
+ * description: The update's details.
+ * x-schemaName: AdminUpdateProduct
+ * properties:
+ *   title:
+ *     type: string
+ *     title: title
+ *     description: The update's title.
+ *   subtitle:
+ *     type: string
+ *     title: subtitle
+ *     description: The update's subtitle.
+ *   description:
+ *     type: string
+ *     title: description
+ *     description: The update's description.
+ *   is_giftcard:
+ *     type: boolean
+ *     title: is_giftcard
+ *     description: The update's is giftcard.
+ *   discountable:
+ *     type: boolean
+ *     title: discountable
+ *     description: The update's discountable.
+ *   images:
+ *     type: array
+ *     description: The update's images.
+ *     items:
+ *       type: object
+ *       description: The image's images.
+ *       required:
+ *         - url
+ *       properties:
+ *         url:
+ *           type: string
+ *           title: url
+ *           description: The image's url.
+ *   thumbnail:
+ *     type: string
+ *     title: thumbnail
+ *     description: The update's thumbnail.
+ *   handle:
+ *     type: string
+ *     title: handle
+ *     description: The update's handle.
+ *   status:
+ *     type: string
+ *     description: The update's status.
+ *     enum:
+ *       - draft
+ *       - proposed
+ *       - published
+ *       - rejected
+ *   type_id:
+ *     type: string
+ *     title: type_id
+ *     description: The update's type id.
+ *   collection_id:
+ *     type: string
+ *     title: collection_id
+ *     description: The update's collection id.
+ *   categories:
+ *     type: array
+ *     description: The update's categories.
+ *     items:
+ *       type: object
+ *       description: The category's categories.
+ *       required:
+ *         - id
+ *       properties:
+ *         id:
+ *           type: string
+ *           title: id
+ *           description: The category's ID.
+ *   tags:
+ *     type: array
+ *     description: The update's tags.
+ *     items:
+ *       type: object
+ *       description: The tag's tags.
+ *       required:
+ *         - id
+ *       properties:
+ *         id:
+ *           type: string
+ *           title: id
+ *           description: The tag's ID.
+ *   options:
+ *     type: array
+ *     description: The update's options.
+ *     items:
+ *       $ref: "#/components/schemas/AdminUpdateProductOption"
+ *   variants:
+ *     type: array
+ *     description: The update's variants.
+ *     items:
+ *       oneOf:
+ *         - type: object
+ *           description: The variant's variants.
+ *           x-schemaName: AdminCreateProductVariant
+ *           required:
+ *             - title
+ *             - prices
+ *           properties:
+ *             title:
+ *               type: string
+ *               title: title
+ *               description: The variant's title.
+ *             sku:
+ *               type: string
+ *               title: sku
+ *               description: The variant's sku.
+ *             ean:
+ *               type: string
+ *               title: ean
+ *               description: The variant's ean.
+ *             upc:
+ *               type: string
+ *               title: upc
+ *               description: The variant's upc.
+ *             barcode:
+ *               type: string
+ *               title: barcode
+ *               description: The variant's barcode.
+ *             hs_code:
+ *               type: string
+ *               title: hs_code
+ *               description: The variant's hs code.
+ *             mid_code:
+ *               type: string
+ *               title: mid_code
+ *               description: The variant's mid code.
+ *             allow_backorder:
+ *               type: boolean
+ *               title: allow_backorder
+ *               description: The variant's allow backorder.
+ *             manage_inventory:
+ *               type: boolean
+ *               title: manage_inventory
+ *               description: The variant's manage inventory.
+ *             variant_rank:
+ *               type: number
+ *               title: variant_rank
+ *               description: The variant's variant rank.
+ *             weight:
+ *               type: number
+ *               title: weight
+ *               description: The variant's weight.
+ *             length:
+ *               type: number
+ *               title: length
+ *               description: The variant's length.
+ *             height:
+ *               type: number
+ *               title: height
+ *               description: The variant's height.
+ *             width:
+ *               type: number
+ *               title: width
+ *               description: The variant's width.
+ *             origin_country:
+ *               type: string
+ *               title: origin_country
+ *               description: The variant's origin country.
+ *             material:
+ *               type: string
+ *               title: material
+ *               description: The variant's material.
+ *             metadata:
+ *               type: object
+ *               description: The variant's metadata.
+ *             prices:
+ *               type: array
+ *               description: The variant's prices.
+ *               items:
+ *                 $ref: "#/components/schemas/AdminCreateProductVariantPrice"
+ *             options:
+ *               type: object
+ *               description: The variant's options.
+ *         - type: object
+ *           description: The variant's variants.
+ *           x-schemaName: AdminUpdateProductVariant
+ *           properties:
+ *             title:
+ *               type: string
+ *               title: title
+ *               description: The variant's title.
+ *             sku:
+ *               type: string
+ *               title: sku
+ *               description: The variant's sku.
+ *             ean:
+ *               type: string
+ *               title: ean
+ *               description: The variant's ean.
+ *             upc:
+ *               type: string
+ *               title: upc
+ *               description: The variant's upc.
+ *             barcode:
+ *               type: string
+ *               title: barcode
+ *               description: The variant's barcode.
+ *             hs_code:
+ *               type: string
+ *               title: hs_code
+ *               description: The variant's hs code.
+ *             mid_code:
+ *               type: string
+ *               title: mid_code
+ *               description: The variant's mid code.
+ *             allow_backorder:
+ *               type: boolean
+ *               title: allow_backorder
+ *               description: The variant's allow backorder.
+ *             manage_inventory:
+ *               type: boolean
+ *               title: manage_inventory
+ *               description: The variant's manage inventory.
+ *             variant_rank:
+ *               type: number
+ *               title: variant_rank
+ *               description: The variant's variant rank.
+ *             weight:
+ *               type: number
+ *               title: weight
+ *               description: The variant's weight.
+ *             length:
+ *               type: number
+ *               title: length
+ *               description: The variant's length.
+ *             height:
+ *               type: number
+ *               title: height
+ *               description: The variant's height.
+ *             width:
+ *               type: number
+ *               title: width
+ *               description: The variant's width.
+ *             origin_country:
+ *               type: string
+ *               title: origin_country
+ *               description: The variant's origin country.
+ *             material:
+ *               type: string
+ *               title: material
+ *               description: The variant's material.
+ *             metadata:
+ *               type: object
+ *               description: The variant's metadata.
+ *             prices:
+ *               type: array
+ *               description: The variant's prices.
+ *               items:
+ *                 $ref: "#/components/schemas/AdminCreateProductVariantPrice"
+ *             options:
+ *               type: object
+ *               description: The variant's options.
+ *   sales_channels:
+ *     type: array
+ *     description: The update's sales channels.
+ *     items:
+ *       type: object
+ *       description: The sales channel's sales channels.
+ *       required:
+ *         - id
+ *       properties:
+ *         id:
+ *           type: string
+ *           title: id
+ *           description: The sales channel's ID.
+ *   weight:
+ *     type: number
+ *     title: weight
+ *     description: The update's weight.
+ *   length:
+ *     type: number
+ *     title: length
+ *     description: The update's length.
+ *   height:
+ *     type: number
+ *     title: height
+ *     description: The update's height.
+ *   width:
+ *     type: number
+ *     title: width
+ *     description: The update's width.
+ *   hs_code:
+ *     type: string
+ *     title: hs_code
+ *     description: The update's hs code.
+ *   mid_code:
+ *     type: string
+ *     title: mid_code
+ *     description: The update's mid code.
+ *   origin_country:
+ *     type: string
+ *     title: origin_country
+ *     description: The update's origin country.
+ *   material:
+ *     type: string
+ *     title: material
+ *     description: The update's material.
+ *   metadata:
+ *     type: object
+ *     description: The update's metadata.
+ * 
+*/
+

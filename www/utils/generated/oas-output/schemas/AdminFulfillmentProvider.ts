@@ -1,0 +1,8 @@
+/**
+ * @schema AdminFulfillmentProvider
+ * type: object
+ * description: The fulfillment provider's fulfillment providers.
+ * x-schemaName: AdminFulfillmentProvider
+ * 
+*/
+

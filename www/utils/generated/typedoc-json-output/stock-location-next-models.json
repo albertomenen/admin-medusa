@@ -1,0 +1,649 @@
+{
+	"id": 12823,
+	"name": "stock-location-next-models",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"comment": {
+		"summary": [
+			{
+				"text": "## Relations Overview\n\n",
+				"kind": "text"
+			},
+			{
+				"text": "```mermaid\nerDiagram\n\tStockLocation }|--|{ StockLocationAddress : address\n\n```",
+				"kind": "code"
+			}
+		]
+	},
+	"children": [
+		{
+			"id": 12839,
+			"name": "StockLocationAddress",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"children": [
+				{
+					"id": 12840,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"signatures": [
+						{
+							"id": 12841,
+							"name": "new StockLocationAddress",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 12839,
+								"name": "StockLocationAddress",
+								"package": "@medusajs/stock-location-next"
+							}
+						}
+					]
+				},
+				{
+					"id": 12842,
+					"name": "id",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12843,
+					"name": "created_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Date"
+						},
+						"name": "Date",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 12844,
+					"name": "updated_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Date"
+						},
+						"name": "Date",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 12845,
+					"name": "deleted_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Date"
+								},
+								"name": "Date",
+								"package": "typescript"
+							}
+						]
+					},
+					"defaultValue": "null"
+				},
+				{
+					"id": 12846,
+					"name": "address_1",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12847,
+					"name": "address_2",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12848,
+					"name": "company",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12849,
+					"name": "city",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12850,
+					"name": "country_code",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12851,
+					"name": "phone",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12852,
+					"name": "province",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12853,
+					"name": "postal_code",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12854,
+					"name": "metadata",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						12840
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						12842,
+						12843,
+						12844,
+						12845,
+						12846,
+						12847,
+						12848,
+						12849,
+						12850,
+						12851,
+						12852,
+						12853,
+						12854
+					]
+				}
+			]
+		},
+		{
+			"id": 12824,
+			"name": "StockLocation",
+			"variant": "declaration",
+			"kind": 128,
+			"flags": {},
+			"children": [
+				{
+					"id": 12825,
+					"name": "constructor",
+					"variant": "declaration",
+					"kind": 512,
+					"flags": {},
+					"signatures": [
+						{
+							"id": 12826,
+							"name": "new StockLocation",
+							"variant": "signature",
+							"kind": 16384,
+							"flags": {},
+							"type": {
+								"type": "reference",
+								"target": 12824,
+								"name": "StockLocation",
+								"package": "@medusajs/stock-location-next"
+							}
+						}
+					]
+				},
+				{
+					"id": 12827,
+					"name": "id",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12828,
+					"name": "created_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Date"
+						},
+						"name": "Date",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 12829,
+					"name": "updated_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+							"qualifiedName": "Date"
+						},
+						"name": "Date",
+						"package": "typescript"
+					}
+				},
+				{
+					"id": 12830,
+					"name": "deleted_at",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Date"
+								},
+								"name": "Date",
+								"package": "typescript"
+							}
+						]
+					},
+					"defaultValue": "null"
+				},
+				{
+					"id": 12831,
+					"name": "name",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "intrinsic",
+						"name": "string"
+					}
+				},
+				{
+					"id": 12832,
+					"name": "address_id",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "intrinsic",
+								"name": "string"
+							}
+						]
+					}
+				},
+				{
+					"id": 12833,
+					"name": "address",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": 12839,
+								"name": "StockLocationAddress",
+								"package": "@medusajs/stock-location-next"
+							}
+						]
+					}
+				},
+				{
+					"id": 12834,
+					"name": "metadata",
+					"variant": "declaration",
+					"kind": 1024,
+					"flags": {},
+					"type": {
+						"type": "union",
+						"types": [
+							{
+								"type": "literal",
+								"value": null
+							},
+							{
+								"type": "reference",
+								"target": {
+									"sourceFileName": "../../node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Record"
+								},
+								"typeArguments": [
+									{
+										"type": "intrinsic",
+										"name": "string"
+									},
+									{
+										"type": "intrinsic",
+										"name": "unknown"
+									}
+								],
+								"name": "Record",
+								"package": "typescript"
+							}
+						]
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Constructors",
+					"children": [
+						12825
+					]
+				},
+				{
+					"title": "Properties",
+					"children": [
+						12827,
+						12828,
+						12829,
+						12830,
+						12831,
+						12832,
+						12833,
+						12834
+					]
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Classes",
+			"children": [
+				12839,
+				12824
+			]
+		}
+	],
+	"packageName": "@medusajs/stock-location-next",
+	"symbolIdMap": {
+		"12823": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/index.ts",
+			"qualifiedName": ""
+		},
+		"12824": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation"
+		},
+		"12827": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.id"
+		},
+		"12828": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.created_at"
+		},
+		"12829": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.updated_at"
+		},
+		"12830": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.deleted_at"
+		},
+		"12831": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.name"
+		},
+		"12832": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.address_id"
+		},
+		"12833": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.address"
+		},
+		"12834": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location.ts",
+			"qualifiedName": "StockLocation.metadata"
+		},
+		"12839": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress"
+		},
+		"12842": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.id"
+		},
+		"12843": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.created_at"
+		},
+		"12844": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.updated_at"
+		},
+		"12845": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.deleted_at"
+		},
+		"12846": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.address_1"
+		},
+		"12847": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.address_2"
+		},
+		"12848": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.company"
+		},
+		"12849": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.city"
+		},
+		"12850": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.country_code"
+		},
+		"12851": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.phone"
+		},
+		"12852": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.province"
+		},
+		"12853": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.postal_code"
+		},
+		"12854": {
+			"sourceFileName": "../../../../packages/modules/stock-location-next/src/models/stock-location-address.ts",
+			"qualifiedName": "StockLocationAddress.metadata"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "../../../../packages/modules/stock-location-next/src/models/index.ts"
+		},
+		"reflections": {
+			"1": 12823
+		}
+	}
+}
