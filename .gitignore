@@ -24,3 +24,6 @@ build/**
 **/stats
 .favorites.json
 .vscode
+
+# Local Netlify folder
+.netlify
